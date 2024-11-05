@@ -1,0 +1,50 @@
+.introduction-container {
+
+    padding: 1.5em;
+
+    h1 {
+        font-size: 2rem;
+        font-family: CooperH-heavy;
+    }
+
+    p {
+        padding-right: 1.5em;
+        font-size: 1rem;
+        font-family: CooperH-Medium;
+        font-weight: 900;
+    }
+
+    button {
+        font-family: CooperH-Book;
+        font-weight: 900;
+    }
+}
+
+.me-img {
+    img {
+        width: 80%;
+    }
+}
+
+.me-img::before, .me-img::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    aspect-ratio: 1;
+    border-color: #e983d8;
+    border-width: 0.5rem;
+}
+
+.me-img::after {
+    border-left: 0;
+    border-top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.me-img::before {
+    border-bottom: 0;
+    border-right: 0;
+    left: 0;
+    top: 0;
+}

@@ -1,0 +1,19 @@
+nav {
+
+    backdrop-filter: blur(0.5rem);
+
+    .profile {
+        font-family: CooperH-Book;
+        font-weight: 900;
+        font-size: 1.05rem;
+    }
+
+    button.theme {
+        padding: 0.15rem 0.2rem;
+    }
+
+
+}
+
+
+
