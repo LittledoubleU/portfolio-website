@@ -1,6 +1,5 @@
 import './navbar.css'
 import Dropdown from '../dropdown/dropdown'
-import ThemeButton from '../button/button'
 
 export default function Navbar() {
     const menuItems = [
@@ -15,7 +14,6 @@ export default function Navbar() {
                 <div className='flex'>
                     <Dropdown menuItems={menuItems} dropName={"Show All"} />
                     <a href="" className="mx-10">About</a>
-                    <ThemeButton />
                 </div>
             </nav>
     )

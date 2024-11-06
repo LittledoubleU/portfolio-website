@@ -21,7 +21,9 @@
 }
 
 .me-img {
+    width: 100%;
     img {
+        /* display: none; */
         width: 80%;
     }
 }
