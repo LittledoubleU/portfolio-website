@@ -1,7 +1,7 @@
 # To do List
 ### Make all transition when observed
 - Navbar 80% + design
-- Introduction (idle border animation)
+- Introduction /
 - Contact
 - Skills
 - Project

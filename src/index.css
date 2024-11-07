@@ -8,6 +8,10 @@
   --bg-color: var(--grey-color);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .bg-color {
   background-color: var(--bg-color);
 }
@@ -18,12 +22,4 @@
   position: absolute;
   left: 0;
   top: 0;
-}
-
-.container {
-  width: 60rem;
-  height: 30rem;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr;
 }

@@ -4,7 +4,7 @@ import Dropdown from '../dropdown/dropdown'
 export default function Navbar() {
     const menuItems = [
         { label: "Introduction", href: "#Introduction" },
-        { label: "Settings", href: "#" },
+        { label: "Contact", href: "#Contact" },
         { label: "Logout", href: "#" }
     ]
 

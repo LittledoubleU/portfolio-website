@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar/navbar"
 import Introduction from "./components/Introduction/introduction"
+import Contact from "./components/contact/contact"
 
 function App() {
     return (
@@ -7,9 +8,7 @@ function App() {
             <div className="">
                 <Navbar />
                 <Introduction />
-                <section className="w-full h-screen">
-                    
-                </section>
+                <Contact />
                 <section className="w-full h-screen">
                     
                 </section>
