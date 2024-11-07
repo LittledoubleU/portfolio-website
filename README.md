@@ -2,7 +2,7 @@
 ### Make all transition when observed
 - Navbar 80% + design
 - Introduction /
-- Contact
+- Contact [facebook, github, email, linkedin]
 - Skills
 - Project
 - Certificate (not sure) & Working Experience

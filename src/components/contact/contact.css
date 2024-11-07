@@ -1,4 +1,74 @@
 .contact-container {
-    width: 40rem;
-    height: 40rem;
+    width: 30rem;
+    height: 30rem;
+
+    button.main-btn {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    button {
+        position: absolute;
+    }
+
+    > div {
+        position: absolute;
+        transform-origin: left;
+        left: 50%;
+        top: 50%;
+
+        button {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+
+    .facebook {
+        rotate: 45deg;
+    }
+
+    .github {
+        rotate: 135deg;
+    }
+
+    .gmail {
+        rotate: 225deg;
+    }
+
+    .linkedIn {
+        rotate: 315deg;
+    }
 }
+
+.contact-header {
+    font-family: HYPED;
+    font-size: 7rem;
+    line-height: 1;
+    /* animation: ContactAnimation 10s infinite forwards; */
+
+    div {
+        display: inline-block;
+    }
+}
+
+/* @keyframes ContactAnimation {
+    0% {
+        color: #e983d8;
+    }
+    35% {
+        color: #fafafa;
+    } 50% {
+        color: #e983d8;
+    } 57% {
+        color: #fafafa;
+    } 64% {
+        color: #e983d8;
+    } 92% {
+        color: #fafafa;
+    }
+} */
+
+/*text-[#e983d8]*/

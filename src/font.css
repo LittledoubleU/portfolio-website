@@ -17,3 +17,8 @@
     font-family: 'CooperH-Medium'; /*a name to be used later*/
     src: url('./src/assets/font/CooperHewitt-Medium.ttf'); /*URL to font*/
 }
+
+@font-face {
+    font-family: 'HYPED'; /*a name to be used later*/
+    src: url('./src/assets/font/HYPED_Font.otf'); /*URL to font*/
+}
