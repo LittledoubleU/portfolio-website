@@ -7,6 +7,7 @@ export default function Contact() {
 
     const ref = useRef(null);
     const isInView = useInView(ref);
+    const [isCompleted, setIsCompleted] = useState(false)
 
     // Debug
     useEffect(() => {
@@ -52,13 +53,19 @@ export default function Contact() {
                 initial={{x: "-50%", y: "50%", opacity: 0, scale: 1}}
                 animate={isInView ? "view" : ""}
                 variants={btnMainVariant}
-                whileHover={{
+                onAnimationComplete={() => {
+                    setIsCompleted(true)
+                }}
+                whileHover={isCompleted?{
                     scale: 0.85,
                     duration: 1,
                     ease: "easeIn",
-                    type: "spring",
-                    stiffness: 200,
-                }}
+                }:{}}
+                onTap={isCompleted?{
+                    scale: 0.5,
+                    duration: 1,
+                    ease: "easeIn",
+                }:{}}
                 >
                 </motion.button>
                 {isOpened === true && 

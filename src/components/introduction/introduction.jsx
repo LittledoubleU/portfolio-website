@@ -58,7 +58,7 @@ export default function Introduction() {
                     type: "Tween",
                     width: {duration:0.45},
                     height: {duration:0.45},
-                    rotate:{delay:0.45}
+                    rotate:{delay:0.45, type:"spring", stiffness: 100}
                 },
                 whileInView: isInitialAnimationComplete ? {
                     scale: [1, 1.05, 1], // Idle animation: scales slightly larger and then back to normal
