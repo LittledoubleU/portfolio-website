@@ -41,7 +41,7 @@
     }
 
     button:hover {
-        background-color: #ae388b;
+        background-color: var(--hot-pink);
     }
 
     button:hover div {
@@ -62,7 +62,7 @@
     content: "";
     width: 20%;
     aspect-ratio: 1;
-    border-color: #e983d8;
+    border-color: var(--pink);
     border-width: 0.5rem;
 }
 

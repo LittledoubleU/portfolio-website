@@ -4,6 +4,8 @@
 
 :root {
   --grey-color:#0B0D0F;
+  --hot-pink: #ae388b;
+  --pink: #e983d8;
 
   --bg-color: var(--grey-color);
 }
