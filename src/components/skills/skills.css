@@ -1,0 +1,29 @@
+.skill-container {
+    width: 60rem;
+    height: 30rem;
+    overflow: hidden;
+
+    svg {
+        width: 30%;
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        transform: translate(-50%);
+    }
+}
+
+.skill-container img {
+    position: absolute;
+    object-position: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#building-2 {
+    max-width: 100%;
+}
+
+#building-1 {
+    max-width: 100%; /* Max 248% */
+}

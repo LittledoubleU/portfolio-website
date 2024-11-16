@@ -9,14 +9,12 @@ export default function Contact() {
 
     const ref = useRef(null);
     const isInView = useInView(ref);
-    const [isCompleted, setIsCompleted] = useState(false)
 
     // Debug
     useEffect(() => {
         if (isInView === false) {
             setIsOpened(false);
         }
-        console.log(isCompleted)
         console.log("Contact is in view: ", isInView)
     }, [isInView]);
 
@@ -107,7 +105,7 @@ export default function Contact() {
         <section className="w-full h-auto flex flex-col justify-center items-center mt-40">
             <ContactHeader />
             <div className="contact-container relative" ref={ref} id="Contact">
-                <motion.a className='rounded-full w-16 h-16 bg-[#e983d8] main-btn flex justify-center items-center'
+                <motion.a className='rounded-full w-16 h-16 bg-[#e983d8] main-btn flex justify-center items-center z-50'
                 onClick={() => setIsOpened(!isOpened)}
                 {...btnMainVariant()}
                 >

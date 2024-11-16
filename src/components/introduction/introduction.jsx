@@ -1,6 +1,8 @@
 import './introduction.css'
 import { useRef, useEffect, useState } from 'react'
-import { useInView, motion} from "framer-motion"
+import { motion } from "framer-motion"; // if you only need 'motion'
+import { useInView } from "framer-motion"; // if you only need 'useInView'
+
 
 export default function Introduction() {
 
