@@ -1,30 +1,19 @@
 import "./skills.css"
-import { useInView, motion, animate } from "framer-motion";
-import { useRef, useEffect } from "react"
+import btns from "./skils";
+import { useInView, motion, useMotionValue, useTransform } from "framer-motion";
+import { useRef, useEffect, useState } from "react"
 import SkillHeader from "./header";
+import Modal from "./modal";
 
 export default function Skill() {
 
     const ref = useRef(null);
     const isInView = useInView(ref);
-
-    // const [scope, animate] = useAnimate()
-
-    // async function handleAnimate() {
-    //     // Set initial values
-    //     await Promise.all([
-    //         animate("#building-1", { minWidth: "248%" }, { duration: 0 }),
-    //         animate("#building-2", { minWidth: "248%", x: "-50%", y: "10%" }, { duration: 0 })
-    //     ]);
-    
-    //     // Animate both elements simultaneously
-    //     await Promise.all([
-    //         animate("#building-1", { minWidth: "100%" }, { duration: 2.25 }),
-    //         animate("#building-2", { minWidth: "100%", x: "-50%", y: "0%" }, { duration: 1.5 })
-    //     ]);
-    // }
+    const [isTrackingMouse, setIsTrackingMouse] = useState(false);
+    const [selectedBtn, setSelectBtn] = useState(null);
 
     const durationTime = 2.25
+    const limitDistance = 15
 
     const buildingVariant1 = {
         initial: {
@@ -61,14 +50,104 @@ export default function Skill() {
             }
         }
     }
+
+    const meVariant = {
+        initial: {
+            y: "100%",
+            scale: 0.5
+        },
+        animate : {
+            y: 0,
+            scale: 1,
+            transition: {
+                ease: "easeOut",
+                duration: durationTime - 0.5,
+                scale: {
+                    type: "spring",
+                    duration: durationTime + 2.5
+                }
+            }
+        }
+    }
     
 
     useEffect(() => {
+        if (isInView === false) {
+            // Start tracking mouse when animation is done
+            setIsTrackingMouse(false);
+        }
         console.log("Skills is in view: ", isInView)
     }, [isInView]);
 
+    const buttonContainerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                delayChildren: durationTime - 0.5,
+                staggerChildren: 0.25,
+            }
+        }
+    };
+    
+    const buttonVariants = {
+        hidden: { opacity: 0, y: "100%" },
+        visible: { 
+            opacity: 1, 
+            y: 0, 
+            transition: { 
+                duration: 1.75, 
+                y: {type: isTrackingMouse? "tween": "spring"}
+            }
+        },
+        tap: { // Move this to the top level
+            scale: 0.75,
+            transition: {
+                duration: 0.1,
+                type: "spring"
+            }
+        }
+    };
+
+    const mouseX = useMotionValue(0);
+    const mouseY = useMotionValue(0);
+
+    const x = useTransform(mouseX, (value) =>
+        Math.max(-limitDistance, Math.min(limitDistance, value))
+    );
+    const y = useTransform(mouseY, (value) =>
+        Math.max(-limitDistance, Math.min(limitDistance, value))
+    );
+
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            // Calculate distance from the center
+            if (isTrackingMouse) {
+                    const centerX = window.innerWidth / 2;
+                    const centerY = window.innerHeight / 2;
+            
+                    mouseX.set(e.clientX - centerX);
+                    mouseY.set(e.clientY - centerY);
+                }
+        };
+    
+        if (isTrackingMouse) {
+            window.addEventListener("mousemove", handleMouseMove);
+        }
+    
+        return () => {
+            window.removeEventListener("mousemove", handleMouseMove);
+        };
+    }, [isTrackingMouse, mouseX, mouseY]);
+
+    function trackingMosueUwU() {
+        if (isInView) {
+            setIsTrackingMouse(true);
+        }
+    }
+
     return (
-        <section className="w-full h-auto flex flex-col justify-center items-center mt-40">
+        <section className="w-full h-auto flex flex-col justify-center items-center mt-40 mb-40">
             <div className="skill-container relative" ref={ref}>
                 <div className="bg">
                     <motion.img src="./src/assets/img/cyberpunkBG.svg" alt="bg" id="cyberpunk-bg" 
@@ -85,6 +164,44 @@ export default function Skill() {
                     animate={isInView?"animate":""}
                     />
                     <SkillHeader view={isInView}/>
+                    <motion.img 
+                        src="./src/assets/img/skillMe.svg" alt="Skill Me UwU"
+                        className={`me ${"me-transition"}`}
+                        variants={meVariant}
+                        initial="initial"
+                        animate={isInView?"animate":""}
+                        style={{
+                            x: isTrackingMouse ? x : 0,
+                            transitionDelay: isTrackingMouse && "0.25s"
+                        }}
+                    />
+                </div>
+                <div className="bg">
+                    <motion.div 
+                        variants={buttonContainerVariants}
+                        initial="hidden"
+                        animate={isInView?"visible":"hidden"}
+                    >
+                        {btns.map((element, index) => (
+                            <motion.button 
+                                key={index}
+                                className={`aspect-square w-1/12 bg-[#0B0D0F] absolute rounded-2xl border-4 skill-btn ${isTrackingMouse ? "btn-transition" : ""}`}
+                                onAnimationComplete={() => {
+                                    if (index === btns.length - 1) trackingMosueUwU(); // Only trigger once, after all buttons are done
+                                }}
+                                style={{
+                                    left: element.position[0],
+                                    top: element.position[1],
+                                    x: isTrackingMouse ? x : 0,
+                                    y: isTrackingMouse ? y : 0
+                                }}
+                                whileTap={isTrackingMouse && "tap"}
+                                variants={buttonVariants}
+                            >
+                                <img src={element.img} alt={element.Name} />
+                            </motion.button>
+                        ))}
+                    </motion.div>
                 </div>
             </div>
         </section>
