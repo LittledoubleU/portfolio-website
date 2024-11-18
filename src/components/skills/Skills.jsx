@@ -1,6 +1,6 @@
 import "./skills.css"
 import btns from "./skils";
-import { useInView, motion, useMotionValue, useTransform } from "framer-motion";
+import { useInView, motion, useMotionValue, useTransform, AnimatePresence } from "framer-motion";
 import { useRef, useEffect, useState } from "react"
 import SkillHeader from "./header";
 import Modal from "./modal";
@@ -146,9 +146,13 @@ export default function Skill() {
         }
     }
 
+    function clickBtn(btn) {
+        setSelectBtn(btn);
+    }
+
     return (
         <section className="w-full h-auto flex flex-col justify-center items-center mt-40 mb-40">
-            <div className="skill-container relative" ref={ref}>
+            <div className="skill-container relative rounded-3xl border-[#e983d8] border-8" ref={ref}>
                 <div className="bg">
                     <motion.img src="./src/assets/img/cyberpunkBG.svg" alt="bg" id="cyberpunk-bg" 
                     variants={buildingVariant3}
@@ -185,7 +189,7 @@ export default function Skill() {
                         {btns.map((element, index) => (
                             <motion.button 
                                 key={index}
-                                className={`aspect-square w-1/12 bg-[#0B0D0F] absolute rounded-2xl border-4 skill-btn ${isTrackingMouse ? "btn-transition" : ""}`}
+                                className={`aspect-square w-1/12 bg-[#151515] absolute rounded-2xl border-4 skill-btn ${isTrackingMouse ? "btn-transition" : ""}`}
                                 onAnimationComplete={() => {
                                     if (index === btns.length - 1) trackingMosueUwU(); // Only trigger once, after all buttons are done
                                 }}
@@ -197,12 +201,19 @@ export default function Skill() {
                                 }}
                                 whileTap={isTrackingMouse && "tap"}
                                 variants={buttonVariants}
+                                onClick={() => clickBtn(element)}
                             >
-                                <img src={element.img} alt={element.Name} />
+                                <element.img></element.img>
                             </motion.button>
                         ))}
                     </motion.div>
                 </div>
+                <AnimatePresence>
+                    {
+                        selectedBtn !== null &&
+                        <Modal selectedBtn={selectedBtn} clickBtn={clickBtn} />
+                    }
+                </AnimatePresence>
             </div>
         </section>
     )

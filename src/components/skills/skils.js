@@ -1,7 +1,9 @@
+import { HardSkillIcon, SoftSkillIcon } from "../icon/icon";
+
 const btns = [
     {
         Name: "Hard Skill",
-        img: "", // Add an appropriate image URL here
+        img: HardSkillIcon, // Add an appropriate image URL here
         contents: [
             {
                 header: "Frontend Development",
@@ -66,7 +68,10 @@ const btns = [
                     { name: "Power BI", details: "Power BI is a Microsoft analytics tool used to visualize and share insights from data.", img: "" },
                     { name: "Looker Studio", details: "Looker Studio (formerly Google Data Studio) is a free tool to create customizable reports and dashboards.", img: "" },
                     { name: "SPSS", details: "SPSS is a software package used for statistical analysis and data management.", img: "" },
-                    { name: "Minitab", details: "Minitab is a statistical software used for data analysis and visualization in quality improvement.", img: "" }
+                    { name: "Minitab", details: "Minitab is a statistical software used for data analysis and visualization in quality improvement.", img: "" },
+                    { name: "SAS Viya", details: "SAS Viya is an analytics platform used for big data analysis and machine learning.", img: "" },
+                    { name: "Numpy", details: "Numpy is a Python library used for working with arrays and matrices, and performing numerical calculations.", img: "" },
+                    { name: "Pandas", details: "Pandas is a Python library used for data manipulation and analysis, providing data structures like DataFrame.", img: "" }
                 ],
                 img: "" // Add an image URL for analytics tools
             },
@@ -79,25 +84,28 @@ const btns = [
                 img: "" // Add an image URL for design tools
             },
             {
-                header: "Other Skills",
+                header: "Backend Development",
                 content: [
-                    { name: "SAS Viya", details: "SAS Viya is an analytics platform used for big data analysis and machine learning.", img: "" },
                     { name: "Flask", details: "Flask is a Python web framework used for building web applications and RESTful APIs.", img: "" },
                     { name: "Express.js", details: "Express.js is a fast, unopinionated web framework for Node.js used for building web applications.", img: "" },
                     { name: "Node.js", details: "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine used for building scalable network applications.", img: "" },
-                    { name: "npm", details: "npm is the default package manager for Node.js, used for managing dependencies in Node.js applications.", img: "" },
-                    { name: "Selenium", details: "Selenium is a tool used for automating web browsers and performing browser testing.", img: "" },
-                    { name: "Numpy", details: "Numpy is a Python library used for working with arrays and matrices, and performing numerical calculations.", img: "" },
-                    { name: "Pandas", details: "Pandas is a Python library used for data manipulation and analysis, providing data structures like DataFrame.", img: "" }
+                    { name: "npm", details: "npm is the default package manager for Node.js, used for managing dependencies in Node.js applications.", img: "" }
+                ],
+                img: "" // Add an image URL for additional skills
+            },
+            {
+                header: "Other Skills",
+                content: [
+                    { name: "Selenium", details: "Selenium is a tool used for automating web browsers and performing browser testing.", img: "" }
                 ],
                 img: "" // Add an image URL for additional skills
             }
         ],
-        position: ["65%", "17.5%"] // left, top
+        position: ["72.5%", "45%"] // left, top
     },
     {
         Name: "Soft Skill",
-        img: "", // Add an appropriate image URL here
+        img: SoftSkillIcon, // Add an appropriate image URL here
         contents: [
             {
                 header: "Communication",
@@ -133,34 +141,6 @@ const btns = [
             }
         ],
         position: ["20%", "45%"] // Example position
-    },
-    {
-        Name: "Certification",
-        img: "", // Add an appropriate image URL here
-        contents: [
-            {
-                header: "OIC INSURTECH AWARD 2023",
-                content: [
-                    { name: "Qualified as 30 Finalist Teams", details: "This award recognizes innovation and technological contributions to the insurance industry.", img: "" }
-                ],
-                img: "" // Add an image URL for this certification
-            },
-            {
-                header: "SAS x KMITL Hackathon AWARD 2023",
-                content: [
-                    { name: "Gold Medal", details: "Awarded for exceptional performance in data analytics and problem-solving in the hackathon.", img: "" }
-                ],
-                img: "" // Add an image URL for this certification
-            },
-            {
-                header: "Financial Well-being Ranger",
-                content: [
-                    { name: "Finance Management", details: "Completion of a course on managing personal finances effectively.", img: "" }
-                ],
-                img: "" // Add an image URL for this certification
-            }
-        ],
-        position: ["72.5%", "70%"] // Example position
     }
 ];
 
