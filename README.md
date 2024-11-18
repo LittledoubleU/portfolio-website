@@ -4,6 +4,6 @@
 - Introduction / [maybe add QR Code Option]
 - Contact [facebook, github, email, linkedin] /
 - Skills / [free: make hover on "skill" UwU.] [add more about my skills on each skill in content]
-- Project
+- Project [image: Slider]
 - Certificate (not sure) & Working Experience
 - 

@@ -1,0 +1,12 @@
+.project-container {
+    columns: 300px;
+    .thumbnail {
+        h2 {
+            font-size: 125%;
+        }
+
+        img {
+            min-width: 100%;
+        }
+    }
+}
