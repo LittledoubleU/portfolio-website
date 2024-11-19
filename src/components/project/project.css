@@ -1,6 +1,7 @@
 .project-container {
     columns: 300px;
     .thumbnail {
+        margin-bottom: 2rem;
         h2 {
             font-size: 125%;
         }
@@ -8,5 +9,15 @@
         img {
             min-width: 100%;
         }
+    }
+
+    .thumbnail:hover {
+        border-radius: 1.5rem;
+        border-width: 8px;
+        border-color: var(--pink);
+    }
+
+    .card-modal {
+        
     }
 }
