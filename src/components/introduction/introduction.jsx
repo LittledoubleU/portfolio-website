@@ -141,7 +141,7 @@ export default function Introduction() {
                 </div>
                 <div className='p-6 flex justify-center items-center'>
                     <motion.div className='me-img relative flex justify-center items-center h-full' {...animateCorner(isInitialAnimationComplete)}>
-                        <motion.img src="./src/assets/img/me.jpg" alt="me" {...expandImageWidth(isInView, isInitialAnimationComplete)}
+                        <motion.img src="./assets/img/me.jpg" alt="me" {...expandImageWidth(isInView, isInitialAnimationComplete)}
                         />
                     </motion.div>
                 </div>

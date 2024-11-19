@@ -2,7 +2,7 @@ const projects = [
     {
         thumbnail: {
             name: "Puppy Cat E-commerce Website",
-            img: "./src/assets/project/Puppy/PuppyThumbnail.svg",
+            img: "./assets/project/Puppy/PuppyThumbnail.svg",
             description: "E-commerce, Database Management System, Flask, Bootstrap5"
         },
         content: {
@@ -16,7 +16,7 @@ const projects = [
     {
         thumbnail: {
             name: "To do List Project Website",
-            img: "./src/assets/project/TodoList/TodoListThumbnail.svg",
+            img: "./assets/project/TodoList/TodoListThumbnail.svg",
             description: "Task management, React, Pure CSS"
         },
         content: {
@@ -30,7 +30,7 @@ const projects = [
     {
         thumbnail: {
             name: "Squeeze-That-Circle Game Website",
-            img: "./src/assets/project/SqueezeThatCircle/SqueezeThatCircleThumbnail.svg",
+            img: "./assets/project/SqueezeThatCircle/SqueezeThatCircleThumbnail.svg",
             description: "Game, Pure JavaScript, Pure CSS"
         },
         content: {

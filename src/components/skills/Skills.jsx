@@ -154,22 +154,22 @@ export default function Skill() {
         <section className="w-full h-auto flex flex-col justify-center items-center mt-40 mb-40">
             <div className="skill-container relative rounded-3xl border-[#e983d8] border-8" ref={ref}>
                 <div className="bg">
-                    <motion.img src="./src/assets/img/cyberpunkBG.svg" alt="bg" id="cyberpunk-bg" 
+                    <motion.img src="./assets/img/cyberpunkBG.svg" alt="bg" id="cyberpunk-bg" 
                     variants={buildingVariant3}
                     initial={"initial"}
                     animate={isInView?"animate":"initial"}/>
-                    <motion.img src="./src/assets/img/cyberpunkBuilding2.svg" alt="building 2" id="building-2" 
+                    <motion.img src="./assets/img/cyberpunkBuilding2.svg" alt="building 2" id="building-2" 
                     variants={buildingVariant2}
                     initial={"initial"}
                     animate={isInView?"animate":"initial"}/>
-                    <motion.img src="./src/assets/img/cyberpunkBuilding1.svg" alt="building 1" id="building-1" 
+                    <motion.img src="./assets/img/cyberpunkBuilding1.svg" alt="building 1" id="building-1" 
                     variants={buildingVariant1}
                     initial={"initial"}
                     animate={isInView?"animate":""}
                     />
                     <SkillHeader view={isInView}/>
                     <motion.img 
-                        src="./src/assets/img/skillMe.svg" alt="Skill Me UwU"
+                        src="./assets/img/skillMe.svg" alt="Skill Me UwU"
                         className={`me ${"me-transition"}`}
                         variants={meVariant}
                         initial="initial"
