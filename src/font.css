@@ -22,3 +22,8 @@
     font-family: 'HYPED'; /*a name to be used later*/
     src: url('./assets/font/HYPED_Font.otf'); /*URL to font*/
 }
+
+@font-face {
+    font-family: 'Genshin';
+    src: url('./assets/font/Genshin Impact DRIP FONT.otf');
+}

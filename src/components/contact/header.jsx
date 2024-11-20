@@ -28,7 +28,7 @@ export default function ContactHeader() {
               clipPath: "inset(0% 0% 0% 0%)", // Open to no clipping
             },
             transition: {
-              duration: 0.65,
+              duration: 0.85,
               ease: "easeOut",
               type: "tween",
             },
@@ -41,7 +41,7 @@ export default function ContactHeader() {
               scale: 1
             },
             transition: {
-              duration: 0.75,
+              duration: 0.95,
               ease: "easeOut",
               type: "spring",
               stiffness: 100
@@ -57,21 +57,21 @@ export default function ContactHeader() {
               clipPath: "inset(0% 0% 0% 0%)", // Open to no clipping
             },
             transition: {
-              duration: 0.55,
+              duration: 0.8,
               ease: "easeOut",
             },
         },
         A: {
             initial: {
               y: "-100%",
-              clipPath: "inset(100% 0% 100% 0%)", // Close top 100%
+              clipPath: "inset(100% 0% 0% 0%)", // Close top 100%
             },
             whileInView: {
               y: "0%",
               clipPath: "inset(0% 0% 0% 0%)", // Open to no clipping
             },
             transition: {
-              duration: 0.5,
+              duration: 0.75,
               ease: "easeOut"
             },
         },

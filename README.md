@@ -6,4 +6,4 @@
 - Skills / [free: make hover on "skill" UwU.] [add more about my skills on each skill in content]
 - Project [image: Slider] [add more sub to json: Role, Collaborators, duration]
 - Certificate (not sure) & Working Experience
-- 
+- Suggest User to rotate device in landscape mode #not sure should I made it like this or just make responsive style
