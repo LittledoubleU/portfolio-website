@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { useState } from 'react'
+import { animate, motion } from "framer-motion";
+import { useState, useEffect } from 'react'
 import { LeftButton, RightButton } from "../icon/icon";
 export default function CardModal(props) {
 
@@ -57,15 +57,17 @@ export default function CardModal(props) {
     function prevButton() {
         if (slider > 0) {
             setSlider((prev) => prev - 1);
-            console.log(slider)
-        } 
+        } else {
+            setSlider(selectedCard.content.img.length - 1);
+        }
     }
 
     function nextButton() {
         if (slider < selectedCard.content.img.length - 1) {
             setSlider((prev) => prev + 1);
-            console.log(slider)
-        } 
+        } else {
+            setSlider(0);
+        }
     }
 
     return (
@@ -78,7 +80,10 @@ export default function CardModal(props) {
         >
             <div className="w-full h-full flex flex-col justify-center flex-1 sticky top-0 p-6">
                 <div className="h-1/2 overflow-hidden object-contain flex justify-center items-center px-44 mb-10 relative">
-                    <img src={selectedCard.content.img[slider]} alt={selectedCard.name+" "+ slider} />
+                    <img 
+                        src={selectedCard.content.img[slider]} 
+                        alt={selectedCard.name+" "+ slider}
+                    />
                     <div className="bg slider">
                         <motion.button 
                             className="aspect-square w-16"

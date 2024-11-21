@@ -1,5 +1,5 @@
 .project-container {
-    columns: 300px;
+    /* scroll-margin-top: 10rem; */
     .thumbnail {
         margin-bottom: 2rem;
         h2 {
@@ -11,8 +11,16 @@
         }
     }
 
-    .thumbnail:hover {
+    > .bg {
+        columns: 300px;
+    }
 
+    .thumbnail:hover img {
+        border-color: var(--pink);
+        border-width: 0.5rem;
+        border-radius: 1rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
 }

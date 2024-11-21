@@ -151,9 +151,9 @@ export default function Skill() {
     }
 
     return (
-        <section className="w-full h-auto flex flex-col justify-center items-center mt-40 mb-40">
-            <div className="skill-container relative rounded-3xl border-[#e983d8] border-8" ref={ref}>
-                <div className="bg">
+        <section className="w-full h-screen flex flex-col justify-center items-center mt-[40rem] mb-[40rem]">
+            <div className="skill-container relative" ref={ref} id="Skills">
+                <div className="bg overflow-hidden rounded-3xl border-[#e983d8] border-8">
                     <motion.img src="./assets/img/cyberpunkBG.svg" alt="bg" id="cyberpunk-bg" 
                     variants={buildingVariant3}
                     initial={"initial"}

@@ -37,17 +37,17 @@ export default function Card(props) {
 
     return (
         <motion.button
-            className='thumbnail rounded-2xl overflow-hidden'
+            className='thumbnail rounded-2xl overflow-hidden bg-black'
             initial="initial"
             animate={isInView?"animate":"initial"}
             whileTap="tap"
-            whileHover="hover"
+           
             variants={cardVariants}
             onClick={() => (setSelectedCard(element))}
             
         >
             <img src={element.thumbnail} alt={element.name} />
-            <div className='bg-black p-5 text-start'>
+            <div className=' p-5 text-start'>
                 <h2>"{element.name}"</h2>
                 <h3>{element.description}</h3>
             </div>

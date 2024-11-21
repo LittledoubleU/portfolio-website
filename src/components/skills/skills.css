@@ -1,7 +1,8 @@
 .skill-container {
     width: 60rem;
     height: 30rem;
-    overflow: hidden;
+    /* overflow: hidden; */
+    scroll-margin-top: 8.5rem;
 
     svg {
         width: 20%;

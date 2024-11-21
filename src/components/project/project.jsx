@@ -29,25 +29,27 @@ export default function Project() {
     }
 
     return (
-        <section className="w-full h-auto flex flex-col justify-center items-center mt-40 relative">
+        <section className="w-full h-screen flex flex-col justify-center items-center mt-[40rem] mb-[40rem] relative">
             <motion.div 
-                className='w-5/6 project-container aspect-video relative overflow-auto pb-8 overflow-x-hidden'
+                className='w-5/6 mt-[15rem] project-container aspect-video relative pb-8'
                 ref={ref}
+                id='Project'
                 initial="initial"
                 animate={isInView?"animate":"initial"}
                 variants={cardContainerVariants}
             >
-
-            {projects.map((element, index) => (
-                <Card element={element} setSelectedCard={setSelectedCard} isInView={isInView} key={index} />
-            ))}
+                <div className="bg overflow-x-hidden overflow-auto">
+                    {projects.map((element, index) => (
+                        <Card element={element} setSelectedCard={setSelectedCard} isInView={isInView} key={index} />
+                    ))}
+                </div>
 
             </motion.div>
 
             <AnimatePresence>
                 {
                     selectedCard !== null &&
-                    <div className="modal w-full h-[70rem] absolute top-0 left-0 z-50">
+                    <div className="modal w-full h-[70rem] absolute top-[-5%] left-0 z-50">
                         <CardModal selectedCard={selectedCard} setSelectedCard={setSelectedCard} />
                     </div>
                 }

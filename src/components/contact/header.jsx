@@ -80,7 +80,7 @@ export default function ContactHeader() {
     const letters = ["C", "O", "N", "T", "A", "C", "T"]
 
     return (
-        <h2 className='contact-header text-[#e983d8] mb-5'>
+        <h2 className='contact-header text-[#e983d8] mb-5 mt-20'>
             {letters.map((letter, index) => (
                 <motion.div {...transitionVariants[letter]} key={index}>{letter}</motion.div>
             ))}

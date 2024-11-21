@@ -14,22 +14,22 @@ function App() {
     };
   
     useEffect(() => {
-      window.addEventListener("resize", updateOrientation);
-      return () => {
-        window.removeEventListener("resize", updateOrientation);
-      };
+        window.addEventListener("resize", updateOrientation);
+        return () => {
+          window.removeEventListener("resize", updateOrientation);
+        };
     }, []);
 
     return (
-        <main className="w-full h-auto relative bg-[#151515] text-neutral-50">
+        <main className="w-full h-screen relative text-neutral-50 overflow-y-scroll">
             {isLandscape ? (
-            <div className="flex flex-col justify-center items-center w-full">
+            <>
                 <Navbar />
                 <Introduction />
                 <Contact />
                 <Skill />
                 <Project />
-            </div>
+            </>
             ) : (
               <div className="w-full h-screen flex justify-center items-center">
                 <h1 className="text-3xl text-center">Please rotate your device to landscape mode</h1>
