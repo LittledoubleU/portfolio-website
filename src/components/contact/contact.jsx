@@ -103,7 +103,7 @@ export default function Contact() {
 
     return (
         <section className="w-full h-screen flex flex-col justify-center items-center mt-[40rem] mb-[40rem]">
-            <ContactHeader />
+            <ContactHeader isInView={isInView} />
             <div className="contact-container relative" ref={ref} id="Contact">
                 <motion.a className='rounded-full w-16 h-16 bg-[#e983d8] main-btn flex justify-center items-center z-50'
                 onClick={() => setIsOpened(!isOpened)}

@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 
-export default function ContactHeader() {
+export default function ContactHeader(props) {
+
+    const isInView = props.isInView;
 
     const transitionVariants = {
         C: {
@@ -82,7 +84,14 @@ export default function ContactHeader() {
     return (
         <h2 className='contact-header text-[#e983d8] mb-5 mt-20'>
             {letters.map((letter, index) => (
-                <motion.div {...transitionVariants[letter]} key={index}>{letter}</motion.div>
+                <motion.div
+                    initial={isInView ? "initial" : "whileInView"}
+                    animate="whileInView"
+                    {...transitionVariants[letter]} 
+                    key={letter + index}
+                >
+                    {letter}
+                </motion.div>
             ))}
         </h2>
     )

@@ -3,6 +3,7 @@ import Introduction from "./components/Introduction/introduction"
 import Contact from "./components/contact/contact"
 import Skill from "./components/skills/Skills"
 import Project from "./components/project/project"
+import CertiWorkMain from "./components/certiAndWork/certiWorkMain"
 import React, { useEffect, useState } from "react";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                 <Contact />
                 <Skill />
                 <Project />
+                <CertiWorkMain />
             </>
             ) : (
               <div className="w-full h-screen flex justify-center items-center">

@@ -12,6 +12,8 @@
         transform: translate(-50%);
     }
 
+
+
     .me {
         width: 45%;
         left: 35%;
@@ -25,12 +27,34 @@
             top: 50%;
             transform: translate(-50%, -50%);
         }
+
+
+    }
+
+    .skill-btn.modal-skill {
+
+        > .bg {
+            z-index: 50;
+        }
+
+        svg {
+            transform: none;
+            width: 50%;
+            position: static;
+        }
+
+        p {
+            display: block;
+            font-family: "CooperH-Book";
+            font-weight: 900;
+            line-height: 1rem;
+        }
     }
 
     .skill-btn:hover {
         border-color: var(--pink);
 
-        svg {
+        svg, path {
             fill: var(--pink);
         }
     }

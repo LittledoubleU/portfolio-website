@@ -57,7 +57,7 @@ export default function Skill() {
             scale: 0.5
         },
         animate : {
-            y: 0,
+            y: "0%",
             scale: 1,
             transition: {
                 ease: "easeOut",
@@ -94,7 +94,7 @@ export default function Skill() {
         hidden: { opacity: 0, y: "100%" },
         visible: { 
             opacity: 1, 
-            y: 0, 
+            y: "0%", 
             transition: { 
                 duration: 1.75, 
                 y: {type: isTrackingMouse? "tween": "spring"}
@@ -152,8 +152,8 @@ export default function Skill() {
 
     return (
         <section className="w-full h-screen flex flex-col justify-center items-center mt-[40rem] mb-[40rem]">
-            <div className="skill-container relative" ref={ref} id="Skills">
-                <div className="bg overflow-hidden rounded-3xl border-[#e983d8] border-8">
+            <div className="skill-container relative overflow-hidden rounded-3xl border-[#e983d8] border-8 mt-10" ref={ref} id="Skills">
+                <div className="bg">
                     <motion.img src="./assets/img/cyberpunkBG.svg" alt="bg" id="cyberpunk-bg" 
                     variants={buildingVariant3}
                     initial={"initial"}
@@ -165,7 +165,7 @@ export default function Skill() {
                     <motion.img src="./assets/img/cyberpunkBuilding1.svg" alt="building 1" id="building-1" 
                     variants={buildingVariant1}
                     initial={"initial"}
-                    animate={isInView?"animate":""}
+                    animate={isInView?"animate":"initial"}
                     />
                     <SkillHeader view={isInView}/>
                     <motion.img 
@@ -173,14 +173,14 @@ export default function Skill() {
                         className={`me ${"me-transition"}`}
                         variants={meVariant}
                         initial="initial"
-                        animate={isInView?"animate":""}
+                        animate={isInView?"animate":"initial"}
                         style={{
-                            x: isTrackingMouse ? x : 0,
-                            transitionDelay: isTrackingMouse && "0.25s"
+                            x: isTrackingMouse ? x : "0%",
+                            transitionDelay: isTrackingMouse && 0.25
                         }}
                     />
                 </div>
-                <div className="bg">
+                <div className="bg overflow-hidden">
                     <motion.div 
                         variants={buttonContainerVariants}
                         initial="hidden"
@@ -196,8 +196,8 @@ export default function Skill() {
                                 style={{
                                     left: element.position[0],
                                     top: element.position[1],
-                                    x: isTrackingMouse ? x : 0,
-                                    y: isTrackingMouse ? y : 0
+                                    x: isTrackingMouse ? x : "0%",
+                                    y: isTrackingMouse ? y : "0%"
                                 }}
                                 whileTap={isTrackingMouse && "tap"}
                                 variants={buttonVariants}
@@ -207,13 +207,13 @@ export default function Skill() {
                             </motion.button>
                         ))}
                     </motion.div>
-                </div>
-                <AnimatePresence>
+                    <AnimatePresence>
                     {
                         selectedBtn !== null &&
                         <Modal selectedBtn={selectedBtn} clickBtn={clickBtn} />
                     }
-                </AnimatePresence>
+                    </AnimatePresence>
+                </div>
             </div>
         </section>
     )

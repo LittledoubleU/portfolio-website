@@ -1,0 +1,6 @@
+.sec {
+    img {
+        object-position: 50% 50%;
+        object-fit: cover;
+    }
+}

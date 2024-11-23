@@ -1,4 +1,4 @@
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Card(props) {
 
@@ -11,7 +11,7 @@ export default function Card(props) {
             opacity: 0
         },
         animate: {
-            y: 0,
+            y: "0%",
             opacity: 1,
             transition: {
                 duration: 1,

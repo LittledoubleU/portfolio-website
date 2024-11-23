@@ -30,7 +30,7 @@ export default function CardModal(props) {
         },
         animate: {
             opacity: 1,
-            y: 0,
+            y: "0%",
             clipPath: "inset(0% 0% 0% 0%)", // Close bottom 100%
             transition: {
                 duration: 0.5,
@@ -72,7 +72,7 @@ export default function CardModal(props) {
 
     return (
         <motion.div 
-            className="bg bg-black rounded-2xl"
+            className="bg bg-black rounded-2xl mt-28"
             initial="initial"
             animate="animate"
             exit="exit"

@@ -47,7 +47,7 @@ export default function Content(props) {
                 {selectedContent.content.map((element, index) => (
                     <button
                         key={index}
-                        className="w-full aspect-square rounded-2xl relative"
+                        className="skill-btn modal-skill w-full aspect-square rounded-2xl relative"
                         onClick={() => (setSelectItem(element))}
                     >
                         <motion.div 
@@ -60,7 +60,10 @@ export default function Content(props) {
                             <div></div>
                             <div></div>
                         </motion.div>
-                        {element.name}
+                        <div className="flex flex-col items-center gap-2">
+                            {element != "" && <element.img></element.img>}
+                            <p className="text-sm">{element.name}</p>
+                        </div>
                     </button>
                 ))}
             </div>
