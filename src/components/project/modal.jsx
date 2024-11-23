@@ -72,15 +72,16 @@ export default function CardModal(props) {
 
     return (
         <motion.div 
-            className="bg bg-black rounded-2xl mt-28"
+            className="bg bg-black rounded-2xl"
             initial="initial"
             animate="animate"
             exit="exit"
             variants={cardModalVariants}
         >
             <div className="w-full h-full flex flex-col justify-center flex-1 sticky top-0 p-6">
-                <div className="h-1/2 overflow-hidden object-contain flex justify-center items-center px-44 mb-10 relative">
+                <div className="h-1/2 flex justify-center items-center px-44 relative overflow-hidden">
                     <img 
+                        className="w-1/2"
                         src={selectedCard.content.img[slider]} 
                         alt={selectedCard.name+" "+ slider}
                     />
@@ -107,7 +108,7 @@ export default function CardModal(props) {
                         </motion.button>
                     </div>
                 </div>
-                <div className="detail grid grid-cols-3 grid-rows-2 h-1/2 text-start p-1">
+                <div className="detail grid grid-cols-3 grid-rows-2 h-1/2 text-start p-1 mt-10">
                     <div className="row-span-2">
                         <div className="w-full pt-10 ps-5">
                             <h2 className="text-2xl project-header">

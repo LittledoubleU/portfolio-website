@@ -30,7 +30,7 @@ const portfolio = {
     ],
     workingExperience: [
         {
-            title: "Producer’s Assistant (Freelance)",
+            title: "Producer’s Assistant (Freelance) at Movietone",
             description: "Managed team members to ensure smooth project coordination and run as planned. Collaborated closely with clients to understand their requirements and preferences, facilitating the production process to meet or exceed expectations.",
             type: "Work Experience",
             company: "Movietone (Video production)",

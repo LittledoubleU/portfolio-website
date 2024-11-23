@@ -1,3 +1,11 @@
+.certiWork-container {
+    width: 60rem;
+    height: 35rem;
+    /* overflow: hidden; */
+    scroll-margin-top: 8.5rem;
+    
+}
+
 .sec {
     img {
         object-position: 50% 50%;

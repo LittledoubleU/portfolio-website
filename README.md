@@ -1,9 +1,9 @@
 # To do List
 ### Make all transition when observed
-- Navbar 80% + design
-- Introduction / [maybe add QR Code Option]
-- Contact [facebook, github, email, linkedin] /
-- Skills / [free: make hover on "skill" UwU.] [add more about my skills on each skill in content]
-- Project [image: Slider] fix slider index [auto slider???]
-- Certificate (not sure) & Working Experience
-- Suggest User to rotate device in landscape mode #not sure should I made it like this or just make responsive style
+- Navbar delete drop down
+- Introduction / [maybe add QR Code Option] [add contact icon #in case normie don't know that website could be scrolled]
+- Contact /
+- Skills /
+- Project [add link for google drive image ;-;]
+- Certificate & Working Experience
+- Suggest User to rotate device in landscape mode #not sure should I made it like this or just make responsive style /

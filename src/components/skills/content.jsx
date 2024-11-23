@@ -38,7 +38,7 @@ export default function Content(props) {
             variants={modalVariants}
         >
             <div>
-                <h2 className="">{selectItem === null ? selectedContent.header : selectItem.name}</h2>
+                <h2 className="content-skill">{selectItem === null ? selectedContent.header : selectItem.name}</h2>
                 {selectItem !== null && 
                     <p>{selectItem.details}</p>
                 }

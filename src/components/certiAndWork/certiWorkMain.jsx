@@ -9,9 +9,28 @@ export default function CertiWorkMain() {
     const isInView = useInView(ref);
     const [section, setSection] = useState(null);
 
+    const [sliderIndex, setSliderIndex] = useState(0);
+
+    function prevButton(port) {
+        if (sliderIndex > 0) {
+            setSliderIndex((prev) => prev - 1);
+        } else {
+            setSliderIndex(port.length - 1);
+        }
+    }
+
+    function nextButton(port) {
+        if (sliderIndex < port.length - 1) {
+            setSliderIndex((prev) => prev + 1);
+        } else {
+            setSliderIndex(0);
+        }
+    }
+
     useEffect(() => {
         console.log("CertiWork is in view: ", isInView)
         setSection(null)
+        setSliderIndex(0)
     }, [isInView]);
 
     const buttonVariants = {
@@ -46,7 +65,7 @@ export default function CertiWorkMain() {
 
     return (
         <section className="w-full h-screen flex flex-col justify-center items-center mt-[40rem]">
-            <div className="skill-container relative overflow-hidden flex flex-col justify-between" ref={ref} id="certiWork">
+            <div className="certiWork-container relative overflow-hidden flex flex-col justify-between" ref={ref} id="certiWork">
                 <div className="w-full flex justify-evenly p-5">
                     <motion.button 
                         className="w-1/6 rounded-full bg-[#e983d8] py-5 px-1 flex justify-center items-center"
@@ -67,13 +86,16 @@ export default function CertiWorkMain() {
                         whileHover="hover"
                         whileTap="tap"
                         variants={buttonVariants}
-                        onClick={() => (setSection("workingExperience"))}
+                        onClick={() => {
+                            setSection("workingExperience");
+                            setSliderIndex(0);
+                        }}
                     >
                         <img src="" alt="" />
                         <p>Working Experience</p>
                     </motion.button>
                 </div>
-                {section !== null && <SliderCertiWork section={section} />}
+                {section !== null && <SliderCertiWork section={section} prevButton={prevButton} nextButton={nextButton} sliderIndex={sliderIndex} />}
             </div>
         </section>
     )

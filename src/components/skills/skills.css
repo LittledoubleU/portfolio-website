@@ -51,6 +51,10 @@
         }
     }
 
+    .content-skill {
+        line-height: 3.5rem;
+    }
+
     .skill-btn:hover {
         border-color: var(--pink);
 

@@ -1,5 +1,9 @@
 .project-container {
     scroll-margin-top: 10rem;
+
+    h2 {
+        font-family: CooperH-Heavy;
+    }
     .thumbnail {
         margin-bottom: 2rem;
         h2 {
