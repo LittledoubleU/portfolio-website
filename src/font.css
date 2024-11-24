@@ -1,29 +1,29 @@
 @font-face {
     font-family: 'CooperH-Heavy'; /*a name to be used later*/
-    src: url('./assets/font/CooperHewitt-Heavy.ttf'); /*URL to font*/
+    src: url('/assets/font/CooperHewitt-Heavy.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'CooperH-Book'; /*a name to be used later*/
-    src: url('./assets/font/CooperHewitt-Book.ttf'); /*URL to font*/
+    src: url('/assets/font/CooperHewitt-Book.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'CooperH-Bold'; /*a name to be used later*/
-    src: url('./assets/font/CooperHewitt-Bold.ttf'); /*URL to font*/
+    src: url('/assets/font/CooperHewitt-Bold.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'CooperH-Medium'; /*a name to be used later*/
-    src: url('./assets/font/CooperHewitt-Medium.ttf'); /*URL to font*/
+    src: url('/assets/font/CooperHewitt-Medium.ttf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'HYPED'; /*a name to be used later*/
-    src: url('./assets/font/HYPED_Font.otf'); /*URL to font*/
+    src: url('/assets/font/HYPED_Font.otf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'Genshin';
-    src: url('./assets/font/Genshin Impact DRIP FONT.otf');
+    src: url('/assets/font/Genshin Impact DRIP FONT.otf');
 }
