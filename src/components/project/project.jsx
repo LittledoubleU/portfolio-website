@@ -61,7 +61,7 @@ export default function Project() {
                 >
                     Project
                 </motion.h2>
-                <div className="bg overflow-x-hidden overflow-auto mt-40">
+                <div className="bg mt-40">
                     {projects.map((element, index) => (
                         <Card element={element} setSelectedCard={setSelectedCard} isInView={isInView} key={index} />
                     ))}

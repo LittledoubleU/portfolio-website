@@ -1,10 +1,10 @@
 const projects = [
     {
-        name: "Puppy Cat E-commerce Website",
-        description: "E-commerce, Database Management System, Flask, Bootstrap5",
-        thumbnail: "./assets/project/Puppy/PuppyThumbnail.svg",
-        content: {
-            img: [
+        "name": "Puppy Cat E-commerce Website",
+        "description": "E-commerce, Database Management System, Flask, Bootstrap5",
+        "thumbnail": "./assets/project/Puppy/PuppyThumbnail.svg",
+        "content": {
+            "img": [
                 "./assets/project/Puppy/puppy1.svg",
                 "./assets/project/Puppy/puppy2.svg",
                 "./assets/project/Puppy/puppy3.svg",
@@ -12,63 +12,71 @@ const projects = [
                 "./assets/project/Puppy/puppy5.svg",
                 "./assets/project/Puppy/puppy6.svg",
                 "./assets/project/Puppy/puppy7.svg"
-              ],
-            link: "https://yourlink.com",
-            tools: ["HTML", "CSS", "JavaScript"],
-            detail: "This is an e-commerce website focused on selling healthy snacks and drinks products.",
-            role: "Full Stack Developer",
-            roleDetail: "I designed the database schema, developed the backend in Flask, and implemented the frontend using Bootstrap5.",
-            collaborators: "",
-            duration: "01/01/23 - 03/01/23",
-            durationDetail: "This project was completed over three months during my free time while learning Flask."
+            ],
+            "link": "https://drive.google.com/drive/folders/119CLQZ-Vp7rZ2lwoR-pcRrw775SHcrip?usp=sharing",
+            "tools": ["HTML", "CSS", "JavaScript", "Flask", "Bootstrap5"],
+            "detail": "An e-commerce website featuring a user-friendly interface, secure payment integration, and robust inventory management, built as part of a university project.",
+            "role": "Full Stack Developer",
+            "roleDetail": "Designed and normalized the database schema, developed the backend using Flask and SQLAlchemy, and implemented the responsive UI with Bootstrap5.",
+            "collaborators": "Team project",
+            "duration": "02/27/24 - 03/31/24",
+            "durationDetail": "The project was completed over three weeks during examination as a collaborative university assignment in a Database Management Systems course."
         }
     },
     {
-        name: "To do List Project Website",
-        description: "Task management, React, Pure CSS",
-        thumbnail: "./assets/project/TodoList/TodoListThumbnail.svg",
-        content: {
-            img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
-            tools: ["React", "CSS", "JavaScript"],
-            detail: "A task management website where users can add, remove, and mark tasks as completed.",
-            role: "Frontend Developer",
-            roleDetail: "Developed the user interface using React.js and styled components with pure CSS.",
-            collaborators: "None (solo project)",
-            duration: "02/01/23 - 02/15/23",
-            durationDetail: "A quick two-week project to practice React.js fundamentals and component-based development."
+        "name": "To-Do List Project Website",
+        "description": "Task management, React, Pure CSS, Local Storage",
+        "thumbnail": "./assets/project/TodoList/TodoListThumbnail.svg",
+        "content": {
+            "img": [
+                "./assets/project/TodoList/todo1.svg",
+                "./assets/project/TodoList/todo2.svg",
+                "./assets/project/TodoList/todo3.svg"
+            ],
+            "link": "https://github.com/LittledoubleU/todolist",
+            "tools": ["React", "CSS", "JavaScript"],
+            "detail": "A task management website where users can add, edit, delete, and mark tasks as completed, with data persistence using local storage.",
+            "role": "Frontend Developer",
+            "roleDetail": "Built the user interface using React.js and styled components with pure CSS. Implemented local storage for task persistence across browser sessions.",
+            "collaborators": "None (solo project)",
+            "duration": "09/22/24 - 09/24/24",
+            "durationDetail": "A quick two-week project to practice React.js fundamentals, including state management, component-based development, and local storage integration."
         }
-    },
+    },    
     {
-        name: "Squeeze-That-Circle Game Website",
-        description: "Game, Pure JavaScript, Pure CSS",
-        thumbnail: "./assets/project/SqueezeThatCircle/SqueezeThatCircleThumbnail.svg",
-        content: {
-            img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
-            tools: ["HTML", "CSS", "JavaScript"],
-            detail: "A fun game where users have to squeeze the circle as it gets smaller. Developed using JavaScript.",
-            role: "Frontend Developer",
-            roleDetail: "Implemented the game logic in JavaScript and ensured cross-browser compatibility.",
-            collaborators: "",
-            duration: "03/01/23 - 03/15/23",
-            durationDetail: "Completed in two weeks as part of a personal challenge to build interactive web games."
+        "name": "Squeeze-That-Circle Game Website",
+        "description": "Game, Pure JavaScript, Pure CSS",
+        "thumbnail": "./assets/project/SqueezeThatCircle/SqueezeThatCircleThumbnail.svg",
+        "content": {
+            "img": [
+                "./assets/project/SqueezeThatCircle/circle1.svg",
+                "./assets/project/SqueezeThatCircle/circle2.svg",
+                "./assets/project/SqueezeThatCircle/circle3.svg"
+            ],
+            "link": "https://github.com/LittledoubleU/squeeze-that-circle",
+            "tools": ["HTML", "CSS", "JavaScript"],
+            "detail": "A whack-a-mole-style game where players click on circles as they appear. Developed using JavaScript and CSS.",
+            "role": "Frontend Developer",
+            "roleDetail": "Implemented the game logic in JavaScript and styled it with pure CSS.",
+            "collaborators": "None (solo project)",
+            "duration": "09/03/24 - 09/17/24",
+            "durationDetail": "Completed in two weeks as a personal challenge to build an interactive web game."
         }
     },
     {
         name: "Frontend Project (Genshin Icon Animated)",
-        description: "Animation, Genshin Impact",
+        description: "Animation, Genshin Impact, PURE CSS, HTML",
         thumbnail: "path/to/your/image.jpg",
         content: {
             img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
+            link: "https://github.com/LittledoubleU/LittleW-Front-End-Project-8",
             tools: ["HTML", "CSS", "JavaScript"],
-            detail: "A frontend project where I animated the Genshin Impact icon to improve my animation skills.",
+            detail: "A frontend project where I animated the Genshin Impact icon to improve my animation skills. by writing a thousan lines of css codes",
             role: "Frontend Developer",
             roleDetail: "Focused on creating smooth animations and ensuring visual appeal with CSS keyframes and JavaScript.",
             collaborators: "None (solo project)",
-            duration: "04/01/23 - 04/15/23",
-            durationDetail: "This was a one-month project aimed at improving animation techniques in web development."
+            duration: "07/28/24 - 08/04/24",
+            durationDetail: "This was a one-week project aimed at improving animation techniques in web development."
         }
     },
     {
@@ -79,126 +87,170 @@ const projects = [
             img: ["", "", ""], // for slider
             link: "https://yourlink.com",
             tools: ["React.js", "API", "CSS"],
-            detail: "A weather app that forecasts the weather in real-time using React.js and RESTful API.",
+            detail: "A weather app that forecasts the weather in real-time using React.js and RESTful API. (I can't provide link because I accidentally push api key into github)",
             role: "Frontend Developer",
             roleDetail: "Developed the weather app UI using React and integrated an external weather API to fetch data.",
             collaborators: "None (solo project)",
-            duration: "05/01/23 - 06/01/23",
-            durationDetail: "A month-long project where I built a real-time weather forecasting app from scratch."
+            duration: "10/08/24 - 10/12/24",
+            durationDetail: "A 4 days project where I built a real-time weather forecasting in your IP area."
         }
     },
     {
-        name: "Plastic Pollution Data Visualization Project Competition",
-        description: "Data Visualization, Python, Competition",
-        thumbnail: "path/to/your/image.jpg",
+        "name": "Plastic Pollution Data Visualization Project Competition",
+        "description": "Data Visualization, Python, Competition, Power BI",
+        "thumbnail": "path/to/your/image.jpg",
+        "content": {
+            "img": [
+                "./assets/project/PlasticPollution/visualization1.svg",
+                "./assets/project/PlasticPollution/visualization2.svg",
+                "./assets/project/PlasticPollution/visualization3.svg"
+            ],
+            "link": "https://drive.google.com/drive/folders/1M-lkwoSn_VMXdrSJwPIjY3-ZNPLeuFek?usp=sharing",
+            "tools": ["Python", "Data Visualization", "Power BI"],
+            "detail": "A project for visualizing plastic pollution data from five rivers into the Gulf of Thailand. The data was displayed using Power BI, and I contributed by web scraping the data. We got the first place of competition.",
+            "role": "Web Scraper",
+            "roleDetail": "Responsible for web scraping plastic pollution data and assisting in data preparation for visualization.",
+            "collaborators": "Team project",
+            "duration": "02/27/24 - 03/31/24",
+            "durationDetail": "This was a 3 weeks team project to compete in a public data visualization competition."
+        }
+    },
+    {
+        name: "Stock Market Portfolio Optimization",
+        description: "Portfolio Management, Excel, VBA, Solver",
+        thumbnail: "./assets/project/PortfolioOptimization/PortfolioThumbnail.svg",
         content: {
-            img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
-            tools: ["Python", "Data Visualization", "Flask"],
-            detail: "A project where we visualized plastic pollution data for a competition. I handled the data visualization using Python.",
-            role: "Data Visualization Specialist",
-            roleDetail: "Used Python libraries like Matplotlib and Seaborn to visualize large datasets for the competition.",
+            img: [
+                "./assets/project/PortfolioOptimization/portfolio1.svg",
+                "./assets/project/PortfolioOptimization/portfolio2.svg",
+                "./assets/project/PortfolioOptimization/portfolio3.svg",
+                "./assets/project/PortfolioOptimization/portfolio4.svg",
+                "./assets/project/PortfolioOptimization/portfolio5.svg"
+            ],
+            link: "https://drive.google.com/drive/folders/196c6LqhYnwe4qtLdT_deHAvCptcsxf4b?usp=sharing",
+            tools: ["Excel", "VBA", "Yahoo Finance API"],
+            detail: "This project explores optimizing a stock portfolio using Excel-based models. Techniques include Minimum Variance, Global Minimum Variance Portfolio, and Sensitivity Analysis.",
+            role: "VBA Developer, Data Analyst",
+            roleDetail: "I developed the optimization model, created VBA functions for automation, and integrated Solver to find optimal portfolio weights.",
             collaborators: "Team project",
-            duration: "07/01/23 - 08/01/23",
-            durationDetail: "This was a two-month team project focused on using data science techniques to compete in a public competition."
+            duration: "10/15/24 - 11/08/24",
+            durationDetail: "Conducted almost one months as part of the course Data Analysis Using Spreadsheet Models."
         }
     },
     {
-        name: "University Project (Database & Full-stack)",
-        description: "Full-stack, Database, UX/UI, Flask",
-        thumbnail: "path/to/your/image.jpg",
-        content: {
-            img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
-            tools: ["Flask", "Bootstrap5", "UX/UI"],
-            detail: "This project involves creating a full-stack web application with database schema design, front-end using Bootstrap5, and back-end using Flask.",
-            role: "Full Stack Developer",
-            roleDetail: "Designed and developed both the frontend and backend of the web app, ensuring database functionality with Flask.",
-            collaborators: "Team of 4",
-            duration: "09/01/23 - 12/01/23",
-            durationDetail: "This was a 3-month university project where I worked in a team to deliver a complete web application."
+        "name": "Genshin Impact Hover Showcase",
+        "description": "A hover-effect website showcasing 5 characters from Genshin Impact, featuring smooth transitions and video backgrounds.",
+        "thumbnail": "",
+        "content": {
+            "img": [
+                ""
+            ],
+            "link": "https://github.com/LittledoubleU/React-8",
+            "tools": [
+                "React",
+                "Lazy Loading",
+                "Framer Motion"
+            ],
+            "detail": "This project features hover effects for character showcases, using Framer Motion for animations and video backgrounds to bring the characters to life.",
+            "role": "Frontend Developer",
+            "roleDetail": "Designed and developed the front-end with React, utilizing Framer Motion for animations and lazy loading for optimized performance.",
+            "collaborators": "None (solo project)",
+            "duration": "10/25/24 - 10/31/24",
+            "durationDetail": "The project was completed over the span of 1 week, focusing on implementing hover effects, lazy loading, and video backgrounds."
         }
     },
     {
-        name: "Project for Learning React.js",
-        description: "Learning React.js",
-        thumbnail: "path/to/your/image.jpg",
-        content: {
-            img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
-            tools: ["React.js"],
-            detail: "This project was focused on learning React.js through hands-on experience.",
-            role: "Frontend Developer",
-            roleDetail: "Worked on understanding React.js concepts, including state management, component rendering, and JSX syntax.",
-            collaborators: "None (solo project)",
-            duration: "10/01/23 - 10/15/23",
-            durationDetail: "This was a short, 2-week project focused on learning React.js fundamentals."
+        "name": "Random Quote Generator",
+        "description": "A Random Quote Generator project built in React that fetches random quotes using GET API requests with Axios.",
+        "thumbnail": "",
+        "content": {
+            "img": [
+                ""
+            ],
+            "link": "https://github.com/LittledoubleU/React-5",
+            "tools": [
+                "React",
+                "Axios"
+            ],
+            "detail": "This project fetches random quotes from an API and displays them on the website, allowing users to generate new quotes with a click.",
+            "role": "Frontend Developer",
+            "roleDetail": "Built the application by following the React-5 repository to understand how to make GET API requests with Axios and display the data.",
+            "collaborators": "None (solo project)",
+            "duration": "10/06/24 - 10/07/24",
+            "durationDetail": "The project was completed in only 2 days, focusing on using Axios for API requests and updating the UI with new quotes."
         }
     },
     {
-        name: "Pure JavaScript Skill Challenge & Deployment",
-        description: "JavaScript, GitHub Pages",
-        thumbnail: "path/to/your/image.jpg",
-        content: {
-            img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
-            tools: ["JavaScript", "GitHub Pages"],
-            detail: "This project was a challenge to test my pure JavaScript skills and to deploy the website using GitHub Pages.",
-            role: "Frontend Developer",
-            roleDetail: "Created the project entirely with JavaScript and deployed it using GitHub Pages for easy accessibility.",
-            collaborators: "None (solo project)",
-            duration: "11/01/23 - 11/10/23",
-            durationDetail: "Completed over a 10-day period to test JavaScript skills and learn deployment processes."
+        "name": "Countdown/Timer Project",
+        "description": "A countdown timer project built in React to develop React skills, with a focus on intervals for managing the countdown functionality.",
+        "thumbnail": "",
+        "content": {
+            "img": [
+                ""
+            ],
+            "link": "https://github.com/LittledoubleU/React-4",
+            "tools": [
+                "React",
+                "JavaScript"
+            ],
+            "detail": "This project features a countdown timer with start, pause, and reset functionalities, using React and JavaScript intervals to manage the countdown logic.",
+            "role": "Frontend Developer",
+            "roleDetail": "Developed the countdown timer by learning how to use intervals in React to control the timer's countdown behavior.",
+            "collaborators": "None (solo project)",
+            "duration": "10/04/24 - 10/05/24",
+            "durationDetail": "The project was completed only 2 days, with a focus on using intervals for handling countdown functionality in React."
         }
     },
     {
-        name: "CSS Transition & Animation Focus Project",
-        description: "CSS, Animation, Transition",
-        thumbnail: "path/to/your/image.jpg",
-        content: {
-            img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
-            tools: ["CSS", "HTML"],
-            detail: "I focused on improving my CSS skills, particularly with transitions and animations.",
-            role: "Frontend Developer",
-            roleDetail: "Explored CSS transitions, animations, and keyframes to create engaging user experiences.",
-            collaborators: "None (solo project)",
-            duration: "12/01/23 - 12/15/23",
-            durationDetail: "This was a 2-week project dedicated to mastering CSS animation and transitions for modern web design."
+        "name": "Calculator Project",
+        "description": "A calculator project built in React to learn and practice React concepts and state management.",
+        "thumbnail": "",
+        "content": {
+            "img": [
+                ""
+            ],
+            "link": "https://github.com/LittledoubleU/React-2",
+            "tools": [
+                "React",
+                "JavaScript"
+            ],
+            "detail": "This project features a fully functional calculator with basic arithmetic operations, built with React and state management.",
+            "role": "Frontend Developer",
+            "roleDetail": "Developed the calculator by learning how to use React for managing state and handling user inputs for mathematical operations.",
+            "collaborators": "None (solo project)",
+            "duration": "10/03/24",
+            "durationDetail": "The project was completed only 1 day, focusing on understanding React's state management and handling user interactions."
         }
     },
     {
-        name: "Weather Forecasting App (React.js)",
-        description: "Weather, React.js, API",
-        thumbnail: "path/to/your/image.jpg",
-        content: {
-            img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
-            tools: ["React.js", "RESTful API"],
-            detail: "An app built in React.js to forecast the weather in real-time using a RESTful API.",
-            role: "Frontend Developer",
-            roleDetail: "Developed the frontend interface using React.js and integrated it with a weather API for real-time data.",
-            collaborators: "None (solo project)",
-            duration: "01/01/24 - 01/15/24",
-            durationDetail: "A 2-week project where I focused on building a real-time weather forecasting app."
+        "name": "Counter Project",
+        "description": "A counter project built in React to learn the fundamentals of React components and state management.",
+        "thumbnail": "",
+        "content": {
+            "img": [
+                ""
+            ],
+            "link": "https://github.com/LittledoubleU/React-1",
+            "tools": [
+                "React",
+                "JavaScript"
+            ],
+            "detail": "This project features a simple counter that can be incremented and decremented, built with React to learn about components and managing state.",
+            "role": "Frontend Developer",
+            "roleDetail": "Developed the counter by learning how to build React components and manage state to update the counter value dynamically.",
+            "collaborators": "None (solo project)",
+            "duration": "10/03/24",
+            "durationDetail": "The project was completed only 1 day, focusing on building components and understanding state management in React."
         }
     },
-    {
-        name: "Web Scraping Project (Selenium & BeautifulSoup)",
-        description: "Web Scraping, Selenium, BeautifulSoup",
-        thumbnail: "path/to/your/image.jpg",
-        content: {
-            img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
-            tools: ["Python", "Selenium", "BeautifulSoup"],
-            detail: "A web scraping project using Selenium and BeautifulSoup to collect data from a website.",
-            role: "Backend Developer",
-            roleDetail: "Built the scraping logic using Selenium for dynamic content and BeautifulSoup for data parsing.",
-            collaborators: "",
-            duration: "02/01/24 - 02/10/24",
-            durationDetail: "Completed in 10 days to learn how to automate web scraping tasks."
-        }
-    }
+
+    
+    
+    
+    
+    
+    
+    
 ];
 
 export default projects;

@@ -42,7 +42,7 @@ export default function CertiWorkMain() {
             y: "0%",
             scale: 1,
             transition: {
-                duration: 0.5,
+                duration: 1.15,
                 ease: "easeIn",
                 type: "spring"
             }
@@ -65,7 +65,7 @@ export default function CertiWorkMain() {
 
     return (
         <section className="w-full h-screen flex flex-col justify-center items-center mt-[40rem]">
-            <div className="certiWork-container relative overflow-hidden flex flex-col justify-between" ref={ref} id="certiWork">
+            <div className="certiWork-container relative overflow-hidden flex flex-col justify-between" ref={ref} id="CertiWork">
                 <div className="w-full flex justify-evenly p-5">
                     <motion.button 
                         className="w-1/6 rounded-full bg-[#e983d8] py-5 px-1 flex justify-center items-center"

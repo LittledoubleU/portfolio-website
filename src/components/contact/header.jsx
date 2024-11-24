@@ -7,77 +7,78 @@ export default function ContactHeader(props) {
     const transitionVariants = {
         C: {
             initial: {
-              x: "-100%",
-              clipPath: "inset(0 0 0 100%)", // Close left 100%
+                x: "-100%",
+                clipPath: "inset(0 0 0 100%)",
             },
-            whileInView: {
-              x: "0%",
-              clipPath: "inset(0% 0% 0% 0%)", // Open to no clipping
-            },
-            transition: {
-              duration: 1.25,
-              ease: "easeOut",
-              type: "spring"
+            animate: {
+                x: isInView ? "0%" : "-100%",
+                clipPath: isInView ? "inset(0% 0% 0% 0%)" : "inset(0 0 0 100%)",
+                transition: {
+                    duration: 1.25,
+                    ease: "easeOut",
+                    type: "spring",
+                },
             },
         },
         N: {
             initial: {
-              x: "100%",
-              clipPath: "inset(0% 100% 0% 0%)", // Close right 100%
+                x: "100%",
+                clipPath: "inset(0% 100% 0% 0%)",
             },
-            whileInView: {
-              x: "0%",
-              clipPath: "inset(0% 0% 0% 0%)", // Open to no clipping
-            },
-            transition: {
-              duration: 0.85,
-              ease: "easeOut",
-              type: "tween",
+            animate: {
+                x: isInView ? "0%" : "100%",
+                clipPath: isInView ? "inset(0% 0% 0% 0%)" : "inset(0% 100% 0% 0%)",
+                transition: {
+                    duration: 0.85,
+                    ease: "easeOut",
+                    type: "tween",
+                },
             },
         },
         O: {
             initial: {
-              scale: 0
+                scale: 0,
             },
-            whileInView: {
-              scale: 1
-            },
-            transition: {
-              duration: 0.95,
-              ease: "easeOut",
-              type: "spring",
-              stiffness: 100
+            animate: {
+                scale: isInView ? 1 : 0,
+                transition: {
+                    duration: 0.95,
+                    ease: "easeOut",
+                    type: "spring",
+                    stiffness: 100,
+                },
             },
         },
         T: {
             initial: {
-              y: "100%",
-              clipPath: "inset(0% 0% 100% 0%)", // Close bottom 100%
+                y: "100%",
+                clipPath: "inset(0% 0% 100% 0%)",
             },
-            whileInView: {
-              y: "0%",
-              clipPath: "inset(0% 0% 0% 0%)", // Open to no clipping
-            },
-            transition: {
-              duration: 0.8,
-              ease: "easeOut",
+            animate: {
+                y: isInView ? "0%" : "100%",
+                clipPath: isInView ? "inset(0% 0% 0% 0%)" : "inset(0% 0% 100% 0%)",
+                transition: {
+                    duration: 0.8,
+                    ease: "easeOut",
+                },
             },
         },
         A: {
             initial: {
-              y: "-100%",
-              clipPath: "inset(100% 0% 0% 0%)", // Close top 100%
+                y: "-100%",
+                clipPath: "inset(100% 0% 0% 0%)",
             },
-            whileInView: {
-              y: "0%",
-              clipPath: "inset(0% 0% 0% 0%)", // Open to no clipping
-            },
-            transition: {
-              duration: 0.75,
-              ease: "easeOut"
+            animate: {
+                y: isInView ? "0%" : "-100%",
+                clipPath: isInView ? "inset(0% 0% 0% 0%)" : "inset(100% 0% 0% 0%)",
+                transition: {
+                    duration: 0.75,
+                    ease: "easeOut",
+                },
             },
         },
     };
+
 
     const letters = ["C", "O", "N", "T", "A", "C", "T"]
 
@@ -85,8 +86,8 @@ export default function ContactHeader(props) {
         <h2 className='contact-header text-[#e983d8] mb-5 mt-20'>
             {letters.map((letter, index) => (
                 <motion.div
-                    initial={isInView ? "initial" : "whileInView"}
-                    animate="whileInView"
+                    initial="initial"
+                    animate="animate"
                     {...transitionVariants[letter]} 
                     key={letter + index}
                 >

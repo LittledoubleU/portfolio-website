@@ -1,5 +1,7 @@
 .project-container {
     scroll-margin-top: 10rem;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
 
     h2 {
         font-family: CooperH-Heavy;
@@ -17,6 +19,8 @@
 
     > .bg {
         columns: 300px;
+        height: auto;
+        column-gap: 20px;
     }
 
     .thumbnail:hover img {

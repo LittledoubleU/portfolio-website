@@ -78,7 +78,7 @@ export default function CardModal(props) {
             exit="exit"
             variants={cardModalVariants}
         >
-            <div className="w-full h-full flex flex-col justify-center flex-1 sticky top-0 p-6">
+            <div className="w-full h-full flex flex-col justify-center flex-1 sticky top-0 pt-6 px-6">
                 <div className="h-1/2 flex justify-center items-center px-44 relative overflow-hidden">
                     <img 
                         className="w-1/2"
@@ -119,8 +119,8 @@ export default function CardModal(props) {
                             </h3>
                         </div>
                     </div>
-                    <div className="pt-5 px-5">
-                        <div className="h-1/2">
+                    <div className="pt-5 ps-5">
+                        <div className="h-1/2 mb-2">
                             <p>
                                 {selectedCard.content.roleDetail}
                             </p>
@@ -136,8 +136,8 @@ export default function CardModal(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="pt-5 px-5">
-                        <div className="h-1/2">
+                    <div className="pt-5 ps-5">
+                        <div className="h-1/2 mb-2">
                             <p>
                                 {selectedCard.content.durationDetail}
                             </p>
@@ -145,20 +145,20 @@ export default function CardModal(props) {
                         <div className="flex justify-around h-1/2">
                             <div>
                                 <h3>DURATION</h3>
-                                <p>{selectedCard.content.role}</p>
+                                <p>{selectedCard.content.duration}</p>
                             </div>
                             <div>
                                 <h3>TOOLS</h3>
-                                <p>{selectedCard.content.tools}</p>
+                                <p>{selectedCard.content.tools.map((element) => (<span>{element} </span>))}</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-2 flex flex-col justify-between p-5 border-t-2 border-[#222222]">
+                    <div className="col-span-2 flex flex-col justify-between pt-2 px-5 pb-2 border-t-2 border-[#222222]">
                         <div>
-                            <h2>Project Overview</h2>
+                            <h2 className="text-2xl mb-2">Project Overview</h2>
                             <p>{selectedCard.content.detail}</p>
                         </div>
-                        <a href="">{selectedCard.content.link}</a>
+                        <a href={selectedCard.content.link} className="text-lg underline hover:opacity-75">Link: {selectedCard.content.link}</a>
                     </div>
                 </div>
             </div>
