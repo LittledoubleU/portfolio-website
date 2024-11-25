@@ -11,7 +11,8 @@ const projects = [
                 "./assets/project/Puppy/puppy4.svg",
                 "./assets/project/Puppy/puppy5.svg",
                 "./assets/project/Puppy/puppy6.svg",
-                "./assets/project/Puppy/puppy7.svg"
+                "./assets/project/Puppy/puppy7.svg",
+                "./assets/project/Puppy/puppy8.svg"
             ],
             "link": "https://drive.google.com/drive/folders/119CLQZ-Vp7rZ2lwoR-pcRrw775SHcrip?usp=sharing",
             "tools": ["HTML", "CSS", "JavaScript", "Flask", "Bootstrap5"],
@@ -29,9 +30,7 @@ const projects = [
         "thumbnail": "./assets/project/TodoList/TodoListThumbnail.svg",
         "content": {
             "img": [
-                "./assets/project/TodoList/todo1.svg",
-                "./assets/project/TodoList/todo2.svg",
-                "./assets/project/TodoList/todo3.svg"
+                "./assets/project/TodoList/TodoListThumbnail.svg"
             ],
             "link": "https://github.com/LittledoubleU/todolist",
             "tools": ["React", "CSS", "JavaScript"],
@@ -49,9 +48,9 @@ const projects = [
         "thumbnail": "./assets/project/SqueezeThatCircle/SqueezeThatCircleThumbnail.svg",
         "content": {
             "img": [
-                "./assets/project/SqueezeThatCircle/circle1.svg",
-                "./assets/project/SqueezeThatCircle/circle2.svg",
-                "./assets/project/SqueezeThatCircle/circle3.svg"
+                "./assets/project/SqueezeThatCircle/SqueezeThatCircleThumbnail.svg",
+                "./assets/project/SqueezeThatCircle/SqueezeThatCircle1.svg",
+                "./assets/project/SqueezeThatCircle/SqueezeThatCircle2.svg"
             ],
             "link": "https://github.com/LittledoubleU/squeeze-that-circle",
             "tools": ["HTML", "CSS", "JavaScript"],
@@ -66,9 +65,13 @@ const projects = [
     {
         name: "Frontend Project (Genshin Icon Animated)",
         description: "Animation, Genshin Impact, PURE CSS, HTML",
-        thumbnail: "path/to/your/image.jpg",
+        thumbnail: "./assets/project/GenshinIcon/GenshinIcon1.svg",
         content: {
-            img: ["", "", ""], // for slider
+            img: [
+                "./assets/project/GenshinIcon/GenshinIcon1.svg",
+                "./assets/project/GenshinIcon/GenshinIcon2.svg",
+                "./assets/project/GenshinIcon/GenshinIcon3.svg"
+            ], // for slider
             link: "https://github.com/LittledoubleU/LittleW-Front-End-Project-8",
             tools: ["HTML", "CSS", "JavaScript"],
             detail: "A frontend project where I animated the Genshin Impact icon to improve my animation skills. by writing a thousan lines of css codes",
@@ -82,10 +85,10 @@ const projects = [
     {
         name: "Weather App Website",
         description: "Weather, React, API",
-        thumbnail: "path/to/your/image.jpg",
+        thumbnail: "./assets/project/WeatherForecast/Weather1.svg",
         content: {
-            img: ["", "", ""], // for slider
-            link: "https://yourlink.com",
+            img: ["./assets/project/WeatherForecast/Weather1.svg"], // for slider
+            link: "https://github.com",
             tools: ["React.js", "API", "CSS"],
             detail: "A weather app that forecasts the weather in real-time using React.js and RESTful API. (I can't provide link because I accidentally push api key into github)",
             role: "Frontend Developer",
@@ -98,12 +101,13 @@ const projects = [
     {
         "name": "Plastic Pollution Data Visualization Project Competition",
         "description": "Data Visualization, Python, Competition, Power BI",
-        "thumbnail": "path/to/your/image.jpg",
+        "thumbnail": "./assets/project/PlasticPollution/PlasticPollutionThumbnail.svg",
         "content": {
             "img": [
-                "./assets/project/PlasticPollution/visualization1.svg",
-                "./assets/project/PlasticPollution/visualization2.svg",
-                "./assets/project/PlasticPollution/visualization3.svg"
+                "./assets/project/PlasticPollution/PlasticPollution1.svg",
+                "./assets/project/PlasticPollution/PlasticPollution2.svg",
+                "./assets/project/PlasticPollution/PlasticPollution3.svg",
+                "./assets/project/PlasticPollution/PlasticPollution4.svg"
             ],
             "link": "https://drive.google.com/drive/folders/1M-lkwoSn_VMXdrSJwPIjY3-ZNPLeuFek?usp=sharing",
             "tools": ["Python", "Data Visualization", "Power BI"],
@@ -118,14 +122,14 @@ const projects = [
     {
         name: "Stock Market Portfolio Optimization",
         description: "Portfolio Management, Excel, VBA, Solver",
-        thumbnail: "./assets/project/PortfolioOptimization/PortfolioThumbnail.svg",
+        thumbnail: "./assets/project/StockOptimization/StockOptimization1.svg",
         content: {
             img: [
-                "./assets/project/PortfolioOptimization/portfolio1.svg",
-                "./assets/project/PortfolioOptimization/portfolio2.svg",
-                "./assets/project/PortfolioOptimization/portfolio3.svg",
-                "./assets/project/PortfolioOptimization/portfolio4.svg",
-                "./assets/project/PortfolioOptimization/portfolio5.svg"
+                "./assets/project/StockOptimization/StockOptimization2.svg",
+                "./assets/project/StockOptimization/StockOptimization3.svg",
+                "./assets/project/StockOptimization/StockOptimization1.svg",
+                "./assets/project/StockOptimization/StockOptimization4.svg",
+                "./assets/project/StockOptimization/StockOptimization5.svg"
             ],
             link: "https://drive.google.com/drive/folders/196c6LqhYnwe4qtLdT_deHAvCptcsxf4b?usp=sharing",
             tools: ["Excel", "VBA", "Yahoo Finance API"],
@@ -140,10 +144,12 @@ const projects = [
     {
         "name": "Genshin Impact Hover Showcase",
         "description": "A hover-effect website showcasing 5 characters from Genshin Impact, featuring smooth transitions and video backgrounds.",
-        "thumbnail": "",
+        "thumbnail": "./assets/project/GenshinCharHover/GenshinCharHover1.svg",
         "content": {
             "img": [
-                ""
+                "./assets/project/GenshinCharHover/GenshinCharHover1.svg",
+                "./assets/project/GenshinCharHover/GenshinCharHover2.svg",
+                "./assets/project/GenshinCharHover/GenshinCharHover3.svg"
             ],
             "link": "https://github.com/LittledoubleU/React-8",
             "tools": [
@@ -162,10 +168,10 @@ const projects = [
     {
         "name": "Random Quote Generator",
         "description": "A Random Quote Generator project built in React that fetches random quotes using GET API requests with Axios.",
-        "thumbnail": "",
+        "thumbnail": "./assets/project/RandomQuote/RandomQuote1.svg",
         "content": {
             "img": [
-                ""
+                "./assets/project/RandomQuote/RandomQuote1.svg"
             ],
             "link": "https://github.com/LittledoubleU/React-5",
             "tools": [
@@ -183,10 +189,11 @@ const projects = [
     {
         "name": "Countdown/Timer Project",
         "description": "A countdown timer project built in React to develop React skills, with a focus on intervals for managing the countdown functionality.",
-        "thumbnail": "",
+        "thumbnail": "./assets/project/Timer/Timer1.svg",
         "content": {
             "img": [
-                ""
+                "./assets/project/Timer/Timer1.svg",
+                "./assets/project/Timer/Timer2.svg"
             ],
             "link": "https://github.com/LittledoubleU/React-4",
             "tools": [
@@ -204,10 +211,10 @@ const projects = [
     {
         "name": "Calculator Project",
         "description": "A calculator project built in React to learn and practice React concepts and state management.",
-        "thumbnail": "",
+        "thumbnail": "./assets/project/Calculator/calculator1.svg",
         "content": {
             "img": [
-                ""
+                "./assets/project/Calculator/calculator1.svg"
             ],
             "link": "https://github.com/LittledoubleU/React-2",
             "tools": [
@@ -225,10 +232,10 @@ const projects = [
     {
         "name": "Counter Project",
         "description": "A counter project built in React to learn the fundamentals of React components and state management.",
-        "thumbnail": "",
+        "thumbnail": "./assets/project/Counter/counter1.svg",
         "content": {
             "img": [
-                ""
+                "./assets/project/Counter/counter1.svg"
             ],
             "link": "https://github.com/LittledoubleU/React-1",
             "tools": [

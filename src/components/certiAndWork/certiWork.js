@@ -7,7 +7,7 @@ const portfolio = {
             company: "OIC",
             dateRange: "2023",
             position: "Participant",
-            img: "/assets/portfolio/OICINSURTEXH2023/OIC1.svg"
+            img: "./assets/portfolio/OICINSURTEXH2023/OIC1.svg"
         },
         {
             title: "SAS x KMITL Hackathon AWARD 2023",
@@ -16,7 +16,7 @@ const portfolio = {
             company: "SAS x KMITL",
             dateRange: "2023",
             position: "Competitor",
-            img: ""
+            img: "./assets/portfolio/SAS2023/SAS2023.svg"
         },
         {
             title: "Financial Well-being Ranger",
@@ -25,7 +25,7 @@ const portfolio = {
             company: "Unknown",
             dateRange: "2023",
             position: "Participant",
-            img: ""
+            img: "./assets/portfolio/Financial/Financial.svg"
         }
     ],
     workingExperience: [
