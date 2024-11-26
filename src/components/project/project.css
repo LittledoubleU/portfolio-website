@@ -20,7 +20,7 @@
     > .bg {
         columns: 300px;
         height: auto;
-        column-gap: 20px;
+        column-gap: 1.25rem;
     }
 
     .thumbnail:hover img {

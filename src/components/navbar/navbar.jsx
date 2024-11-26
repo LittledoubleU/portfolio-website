@@ -11,7 +11,7 @@ export default function Navbar() {
     ]
 
     return (
-            <nav className='w-full flex justify-between items-center h-20 sticky top-0 px-24 text-nowrap'>
+            <nav className='w-full md:h-16 flex justify-between items-center h-20 sticky top-0 px-24 text-nowrap'>
                 <div className='profile'>Sukhum Phonnopparat</div>
                 <div className='flex gap-10'>
                     {menuItems.map((element, index) => (<a href={element.href} key={index}>{element.label}</a>))}

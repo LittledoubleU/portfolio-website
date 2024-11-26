@@ -37,7 +37,7 @@ export default function Card(props) {
 
     return (
         <motion.button
-            className='w-96 thumbnail rounded-2xl overflow-hidden bg-black'
+            className='w-96 lg:w-80 md:w-[35rem] thumbnail rounded-2xl overflow-hidden bg-black'
             initial="initial"
             animate={isInView?"animate":"initial"}
             whileTap="tap"

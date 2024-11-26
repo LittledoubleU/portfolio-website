@@ -29,8 +29,36 @@ export default function SliderCertiWork(props) {
         }
     }
 
+    const modalVariants = {
+        initial: {
+            y: "100%"
+        },
+        animate: {
+            y: 0,
+            transition: {
+                duration: 0.5,
+                ease: "easeIn",
+                type: "tween"
+            }
+        },
+        exit: {
+            y: "-100%",
+            transition: {
+                duration: 0.5,
+                ease: "easeIn",
+                type: "tween"
+            }
+        }
+    } 
+
     return (
-        <div className="w-full h-full">
+        <motion.div 
+            className="w-full h-full"
+            variants={modalVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+        >
             <div className="w-full h-full relative">
                 <div className="bg sec overflow-hidden">
                     <img src={port[sliderIndex].img} alt="bg img" className="absolute top-0" />
@@ -67,6 +95,6 @@ export default function SliderCertiWork(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

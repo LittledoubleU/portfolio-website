@@ -47,3 +47,9 @@ main {
         scroll-snap-align: start;
     }
 }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 8px;
+    }
+}
