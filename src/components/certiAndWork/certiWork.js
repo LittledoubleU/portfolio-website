@@ -36,7 +36,7 @@ const portfolio = {
             company: "Movietone (Video production)",
             dateRange: "17-26 Nov 2023",
             position: "Producer’s Assistant",
-            img: ""
+            img: "./assets/portfolio/Movietone/Movietone.svg"
         }
     ]
 };
