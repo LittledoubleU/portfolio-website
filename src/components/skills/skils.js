@@ -1,4 +1,4 @@
-import { HardSkillIcon, SoftSkillIcon, Wrench, WindowSidebar, Terminal, Git, GithubIcon, Microsoft, Database, BarChart, Pen, CodeSlash, ThreeDot, Clock, PersonArmUp, Communication, LightBlub, Jquery, ReactIcon, Html, Css, Bootstrap, PythonIcon, JavaIcon, JavascriptIcon, VbaIcon, RIcon, PycharmIcon, PostmanIcon, VscodeIcon, Gitlab, Postgresql, MySQL, SQLlite, MicroWord, MicroExcel, MicroPowerPoint, SASViyaIcon, MinitabIcon, SPSSIcon, NumpyIcon, PandasIcon, LookerStudio, PowerBi, PhotoshopIcon, FigmaIcon, NodeJS, ExpressJSIcon, FlaskIcon, NpmIcon, SeleniumIcon, MicrosoftTeamsIcon, Teamwork, EfficientCommu, AnalyticIcon, TimeManage, ProjectCoordinate, AdaptIcon, SelfLearning } from "../icon/icon";
+import { HardSkillIcon, SoftSkillIcon, Wrench, WindowSidebar, Terminal, Git, GithubIcon, Microsoft, Database, BarChart, Pen, CodeSlash, ThreeDot, Clock, PersonArmUp, Communication, LightBlub, Jquery, ReactIcon, Html, Css, Bootstrap, PythonIcon, JavaIcon, JavascriptIcon, VbaIcon, RIcon, PycharmIcon, PostmanIcon, VscodeIcon, Gitlab, Postgresql, MySQL, SQLlite, MicroWord, MicroExcel, MicroPowerPoint, SASViyaIcon, MinitabIcon, SPSSIcon, NumpyIcon, PandasIcon, LookerStudio, PowerBi, PhotoshopIcon, FigmaIcon, NodeJS, ExpressJSIcon, FlaskIcon, NpmIcon, SeleniumIcon, MicrosoftTeamsIcon, Teamwork, EfficientCommu, AnalyticIcon, TimeManage, ProjectCoordinate, AdaptIcon, SelfLearning, DockerIcon, NestjsIcon, TypescriptIcon } from "../icon/icon";
 
 const btns = [
     {
@@ -27,7 +27,8 @@ const btns = [
                         name: "VBA",
                         details: "VBA (Visual Basic for Applications) is a programming language built into Microsoft Office applications, commonly used for automation and creating complex macros.",
                         img: VbaIcon
-                    }
+                    },
+                    { "name": "TypeScript", "details": "TypeScript is a superset of JavaScript that adds static typing and other features for building large-scale applications.", "img": TypescriptIcon }
                 ],
                 img: CodeSlash // Add an image URL for programming languages
             },
@@ -94,7 +95,9 @@ const btns = [
                     { name: "Flask", details: "Flask is a Python web framework used for building web applications and RESTful APIs.", img: FlaskIcon },
                     { name: "Express.js", details: "Express.js is a fast, unopinionated web framework for Node.js used for building web applications.", img: ExpressJSIcon },
                     { name: "Node.js", details: "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine used for building scalable network applications.", img: NodeJS },
-                    { name: "npm", details: "npm is the default package manager for Node.js, used for managing dependencies in Node.js applications.", img: NpmIcon }
+                    { name: "npm", details: "npm is the default package manager for Node.js, used for managing dependencies in Node.js applications.", img: NpmIcon },
+                    { "name": "Docker", "details": "Docker is a platform that enables developers to package applications and their dependencies into containers, ensuring consistency across different environments.", "img": DockerIcon },
+                    { "name": "NestJS", "details": "NestJS is a framework for building efficient, scalable Node.js server-side applications, leveraging TypeScript and offering a modular architecture.", "img": NestjsIcon }
                 ],
                 img: Terminal // Add an image URL for additional skills
             },
