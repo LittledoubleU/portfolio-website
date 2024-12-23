@@ -64,7 +64,7 @@ export default function CertiWorkMain() {
     }
 
     return (
-        <section className="w-full h-screen flex flex-col justify-center items-center mt-[40rem]">
+        <section className="w-full h-dvh flex flex-col justify-center items-center mt-[40rem]">
             <div className="certiWork-container relative overflow-hidden flex flex-col justify-between" ref={ref} id="CertiWork">
                 <div className="w-full flex justify-evenly p-5">
                     <motion.button 

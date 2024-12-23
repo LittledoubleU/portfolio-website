@@ -182,7 +182,7 @@ export default function Introduction() {
     }
 
     return (
-        <section className="w-full h-screen flex flex-col justify-center items-center mt-[-4rem] mb-[40rem]">
+        <section className="w-full h-dvh flex flex-col justify-center items-center mt-[-4rem] mb-[40rem]">
             <div className="introduction-container w-[60rem] h-[30rem]" ref={ref} id="Introduction">
                 <div className="relative flex justify-center items-end w-full">
                     <div className=" overflow-hidden w-full">

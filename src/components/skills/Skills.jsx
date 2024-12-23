@@ -151,7 +151,7 @@ export default function Skill() {
     }
 
     return (
-        <section className="w-full h-screen flex flex-col justify-center items-center mt-[40rem] mb-[40rem]">
+        <section className="w-full h-dvh flex flex-col justify-center items-center mt-[40rem] mb-[40rem]">
             <div className="skill-container relative overflow-hidden rounded-3xl border-[#e983d8] border-8 mt-10" ref={ref} id="Skills">
                 <div className="bg">
                     <motion.img src="./assets/img/cyberpunkBG.svg" alt="bg" id="cyberpunk-bg" 

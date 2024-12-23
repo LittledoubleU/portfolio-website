@@ -44,7 +44,7 @@ export default function Project() {
     }
 
     return (
-        <section className="w-full h-screen flex flex-col justify-center items-center mt-[40rem] mb-[40rem] relative">
+        <section className="w-full h-dvh flex flex-col justify-center items-center mt-[40rem] mb-[40rem] relative">
             <motion.div 
                 className='w-5/6 h-[34.5rem] project-container aspect-video relative pb-8'
                 ref={ref}

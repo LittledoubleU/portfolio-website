@@ -22,7 +22,7 @@ function App() {
     }, []);
 
     return (
-        <main className="w-full h-screen relative text-neutral-50 overflow-y-scroll">
+        <main className="w-full h-dvh relative text-neutral-50 overflow-y-scroll">
             {isLandscape ? (
             <>
                 <Navbar />
