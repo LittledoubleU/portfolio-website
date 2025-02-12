@@ -1,4 +1,4 @@
-import { HardSkillIcon, SoftSkillIcon, Wrench, WindowSidebar, Terminal, Git, GithubIcon, Microsoft, Database, BarChart, Pen, CodeSlash, ThreeDot, Clock, PersonArmUp, Communication, LightBlub, Jquery, ReactIcon, Html, Css, Bootstrap, PythonIcon, JavaIcon, JavascriptIcon, VbaIcon, RIcon, PycharmIcon, PostmanIcon, VscodeIcon, Gitlab, Postgresql, MySQL, SQLlite, MicroWord, MicroExcel, MicroPowerPoint, SASViyaIcon, MinitabIcon, SPSSIcon, NumpyIcon, PandasIcon, LookerStudio, PowerBi, PhotoshopIcon, FigmaIcon, NodeJS, ExpressJSIcon, FlaskIcon, NpmIcon, SeleniumIcon, MicrosoftTeamsIcon, Teamwork, EfficientCommu, AnalyticIcon, TimeManage, ProjectCoordinate, AdaptIcon, SelfLearning, DockerIcon, NestjsIcon, TypescriptIcon } from "../icon/icon";
+import { HardSkillIcon, SoftSkillIcon, Wrench, WindowSidebar, Terminal, Git, GithubIcon, Microsoft, Database, BarChart, Pen, CodeSlash, ThreeDot, Clock, PersonArmUp, Communication, LightBlub, Jquery, ReactIcon, Html, Css, Bootstrap, PythonIcon, JavaIcon, JavascriptIcon, VbaIcon, RIcon, PycharmIcon, PostmanIcon, VscodeIcon, Gitlab, Postgresql, MySQL, SQLlite, MicroWord, MicroExcel, MicroPowerPoint, SASViyaIcon, MinitabIcon, SPSSIcon, NumpyIcon, PandasIcon, LookerStudio, PowerBi, PhotoshopIcon, FigmaIcon, NodeJS, ExpressJSIcon, FlaskIcon, NpmIcon, SeleniumIcon, MicrosoftTeamsIcon, Teamwork, EfficientCommu, AnalyticIcon, TimeManage, ProjectCoordinate, AdaptIcon, SelfLearning, DockerIcon, NestjsIcon, TypescriptIcon, MongodbIcon, TailwindSolidIcon } from "../icon/icon";
 
 const btns = [
     {
@@ -11,6 +11,7 @@ const btns = [
                     { name: "HTML5", details: "HTML5 is the latest version of HTML with enhanced features like multimedia integration, new semantic tags, and improved accessibility.", img: Html },
                     { name: "CSS", details: "CSS is used to style web pages, making them visually appealing with flexibility and responsiveness.", img: Css },
                     { name: "Bootstrap5", details: "Bootstrap5 is a CSS framework for building responsive and modern web designs.", img: Bootstrap },
+                    { name: "Tailwind CSS", details: "Tailwind CSS is a utility-first CSS framework that enables rapid UI development with highly customizable styles.", img: TailwindSolidIcon },
                     { name: "React", details: "React is a JavaScript library for building user interfaces, mainly for single-page applications.", img: ReactIcon },
                     { name: "jQuery", details: "jQuery is a JavaScript library that simplifies DOM manipulation, event handling, and AJAX requests.", img: Jquery }
                 ],
@@ -55,7 +56,9 @@ const btns = [
                 content: [
                     { name: "MySQL", details: "MySQL is an open-source relational database management system.", img: MySQL },
                     { name: "SQLite", details: "SQLite is a C-language library that implements a small, fast, self-contained SQL database engine.", img: SQLlite },
-                    { name: "PostgreSQL", details: "PostgreSQL is an open-source, object-relational database system known for its scalability and support for advanced features.", img: Postgresql }
+                    { name: "PostgreSQL", details: "PostgreSQL is an open-source, object-relational database system known for its scalability and support for advanced features.", img: Postgresql },
+                    { name: "MongoDB", details: "MongoDB is a NoSQL database known for its flexible schema, scalability, and JSON-like document storage.", img: MongodbIcon }
+
                 ],
                 img: Database // Add an image URL for databases
             },
